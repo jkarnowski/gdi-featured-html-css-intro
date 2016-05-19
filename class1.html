@@ -85,7 +85,8 @@
     <!-- What is HTML?-->
     <section>
       <h3>What is HTML?</h3>
-      <p>HTML is the code that allows us to build websites</p>
+      <p>HTML is the markup language that allows us to build websites</p>
+      <p>HTML is composed of HTML tags that together provide a blueprint for a webpage.</p>
       <img src = "img/homepage-view.png" alt="Screenshot of the Girl Develop It Homepage">
     </section>
 
@@ -95,18 +96,36 @@
       <img src = "img/homepage-html.png" alt="Screenshot of the Girl Develop It page source code">
     </section>
 
+    <section>
+      <h3>Let's Explore!</h3>
+      <p>Open the source code in a few different websites.</p>
+      <ul>
+        <li>What do you notice?</li>
+        <li>How is the content organized? Can you figure out the structure?</li>
+        <li>What's confusing? Interesting?</li>
+      </ul>
+      <br>
+      <hr>
+      <h3>A few sites to explore</h3>
+      <ul>
+        <li><a href="http://www.girldevelopitsf.com/">GDI SF</a></li>
+        <li><a href="http://sf.funcheap.com/">Fun and Cheap SF</a></li>
+        <li><a href="http://www.meetup.com/">Meetup.com</a></li>
+      </ul>
+    </section>
+
     <!-- Terms-->
     <section>
       <h3>Terms</h3>
       <ul>
         <li><strong>Web design</strong><br />
-        The process of planning, structuring and creating a website</li>
+        Creating the user experience through mockups, wireframes; most likely not involved in writing the code</li>
+        <li><strong>Front end developer</strong><br />
+        client-side programming: the visual components that a user sees; the look and feel of the web/mobile experience</li>
+        <li><strong>Back end developer</strong><br />
+        server-side programming: systems, networking, database management.</li>
         <li><strong>Web development</strong><br />
-        The process of programming dynamic web applications</li>
-        <li><strong>Front end</strong><br />
-        The outwardly visible elements of a website or application</li>
-        <li><strong>Back end</strong><br />
-        The inner workings and functionality of a website or application.</li>
+        server and client-side development</li>
       </ul>
     </section>
 
@@ -166,6 +185,20 @@
       <img src="img/sample-page.png" alt="Screenshot of a sample page"/>
       <p>By the end of the class, you will have built a simple site using HTML and CSS on a topic of your choice. <a href="sample-code/final/index.html" target="_blank">Here is one about rock climbing.</a>
     </section>
+    
+    <section>
+      <h3>Final project: 2 day</h3>
+      <ul>
+        <li>Website with at least 3 different pages</li>
+        <li>Navigation Bar and footer</li>
+        <li>Images</li>
+        <li>Ordered and unordered List</li>
+        <li>CSS: font, color, layout with box model positioning</li>
+        <li>STRETCH: mobile responsive</li>
+      </ul>
+      <hr>
+      <p>Interested in showing off your website to your friends and family? Come to Part 2!</p>
+    </section>    
 
     <section>
       <h3>Anatomy of a website</h3>
@@ -173,7 +206,15 @@
       <strong>+ HTML</strong>: Structure<br />
       <strong>+ CSS</strong>: Presentation<br />
       <strong>= Your Website</strong></p>
-      <p>A website is a way to present your content to the world, using HTML and CSS to present that content &amp; make it look good.</p>
+    </section>
+
+    <section>
+      <h3>Let's Get Started!</h3>
+      <ol>
+        <li>Create the folder structure: main folder, css folder, img folder, index.html, README.md</li>
+        <li>index.html: Your first HTML page! What is the basic HTML blueprint to get started?</li>
+        <li>main.css: the file for the main styling</li>
+      </ol>
     </section>
 
     <section>
@@ -198,72 +239,7 @@
         <li><strong>Element</strong>
           <ul>
             <li>An individual component of HTML</li>
-            <li>Paragraph, heading, table, list, div, link, image, etc.</li>
-          </ul>
-        </li>
-        <li><strong>Tag</strong>
-          <ul>
-            <li>Marks the beginning &amp; end of an element</li>
-            <li>Opening tag and Closing Tag</li>
-            <li>Tags contain characters that indicate the tag's purpose
-<pre><code class ="html">&lt;tagname&gt;Stuff in the middle&lt;/tagname&gt;</code></pre>
-            </li>
-            <li>
-<pre><code class ="html">&lt;p&gt; This is a sample paragraph.&lt;/p&gt;</code></pre>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-
-    <!--anatomy of a tag -->
-    <section>
-      <h3>Tag Breakdown</h3>
-      <img src="img/tagbreakdown.png" alt="Tag breakdown" style="border: none; box-shadow: none;" />
-    </section>
-    <section>
-      <h3>Anatomy of an HTML element</h3>
-      <ul>
-        <li><strong>Container Element</strong>
-          <ul>
-            <li>An element that can contain other elements or
-        content</li>
-            <li>A paragraph (&lt;p>) contains text</li>
-          </ul>
-        </li>
-        <li><strong>Stand Alone Element</strong>
-          <ul>
-            <li>An element that cannot contain anything else</li>
-            <li>
-<pre><code class = "html">&lt;br/&gt;
-&lt;img/&gt;
-</code></pre>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>Anatomy of an HTML element</h3>
-      <ul>
-        <li><strong>Attribute</strong>
-          <ul>
-            <li>Provides additional information about the HTML element</li>
-            <li>Class, ID, language, style, identity, source</li>
-            <li>Placed inside an opening tag, before the right angle bracket.</li>
-          </ul>
-        </li>
-        <li><strong>Value</strong>
-          <ul>
-            <li>Value is the value assigned to a given attribute.</li>
-            <li>Values must be contained inside quotation marks.</li>
-            <li>
-<pre><code class ="html">&lt;div id="copyright"&gt;&copy;Girl Develop It logo 2016&lt;/div&gt;
-&lt;img src="my_picture.jpg" /&gt;
-&lt;a href="http://girldevelopit.com"&gt;Girl Develop It&lt;/a&gt;
-</code></pre>
-            </li>
+            <li>What are the core HTML elements? Add them to your index page</li>
           </ul>
         </li>
       </ul>
@@ -273,12 +249,7 @@
     <section>
       <h3>Doctype</h3>
       <p>The ﬁrst thing on an HTML page is the doctype, which tells the browser which version of the markup language the page is using.</p>
-<pre><code class = "html">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML
-4.01 Transitional//EN" "http://
-www.w3.org/TR/html4/loose.dtd"&gt;
-</code></pre>
-<pre><code class = "html">&lt;!DOCTYPE html&gt;
-</code></pre>
+        <pre><code class = "html"> &lt;!DOCTYPE html&gt; </code></pre>
       <p><small>* The doctype is case-insensitive. <br/>DOCtype, doctype, DocType and DoCtYpe are all valid.</small></p>
     </section>
 
@@ -318,10 +289,81 @@ www.w3.org/TR/html4/loose.dtd"&gt;
 </code></pre>
     </section>
 
+    <!--anatomy of a tag -->
+    <section>
+      <h3>Tag Breakdown</h3>
+      <img src="img/tagbreakdown.png" alt="Tag breakdown" style="border: none; box-shadow: none;" />
+    </section>
+    
+    <section>
+      <h3>Tags</h3>
+        <ul>
+          <li>Marks the beginning &amp; end of an element</li>
+          <li>Tags contain characters that indicate the tag's purpose. Not all tags look the same.</li>
+          <pre>
+            <code class ="html">&lt;p&gt; This is a sample paragraph.&lt;/p&gt;</code>
+          </pre>
+        </ul>
+          <p>What are some different HTML tags? Try adding a few to your index.html page</p>
+    </section>
+    
+    <section>
+      <h3>Anatomy of an HTML element</h3>
+      <ul>
+        <li><strong>Container Element</strong>
+          <ul>
+            <li>An element that can contain other elements or
+        content</li>
+            <li>A paragraph (&lt;p>) contains text</li>
+          </ul>
+        </li>
+        <li><strong>Stand Alone Element</strong>
+          <ul>
+            <li>An element that cannot contain anything else</li>
+            <li>
+<pre><code class = "html">&lt;br/&gt;
+&lt;img/&gt;
+</code></pre>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Anatomy of an HTML element</h3>
+      <ul>
+        <li><strong>Attribute</strong>
+          <ul>
+            <li>define characteristics of an HTML element</li>
+            <li>There are two pieces: name &amp; value.</li>
+            <li>Placed inside an opening tag, before the right angle bracket.</li>
+            <li>Name is the property you want to set and needs a value.</li>
+          </ul>
+        </li>
+        <li><strong>Value</strong>
+          <ul>
+            <li>Value is the content assigned to that attribute.</li>
+            <li>Values must be contained inside quotation marks.</li>
+            <li>
+<pre><code class ="html">&lt;div id="copyright"&gt;&copy;Girl Develop It logo 2016&lt;/div&gt;
+&lt;img src="my_picture.jpg" /&gt;
+&lt;a href="http://girldevelopit.com"&gt;Girl Develop It&lt;/a&gt;
+</code></pre>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+
     <!-- Develop it -->
     <section>
       <h3>Let's develop it!</h3>
-      <p>Let's get our web page set up with a doctype, head, title and body.</p>
+      <p>By now you should have:</p>
+      <ul>
+        <li>DOCTYPE, header, body, and maybe a few tags</li>
+      </ul>
       <p>Later we'll add some content.</p>
     </section>
 
@@ -329,7 +371,13 @@ www.w3.org/TR/html4/loose.dtd"&gt;
     <section>
       <h3>Nesting</h3>
       <p>All elements "nest" inside one another</p>
-      <p>Nesting is what happens when you put other containing tags inside other containing tags. For example, you would put the &lt;p&gt; inside of the &lt;body&gt; tags. The &lt;p&gt; is now nested inside the &lt;body&gt;</p>
+      <p>Nesting is what happens when you put other containing tags inside other containing tags. For example, you would put the <code>&lt;p&gt;</code> inside of the <code>&lt;body&gt;</code> tags. The <code>&lt;p&gt;</code> is now nested inside the <code>&lt;body&gt;</code></p>
+      <pre><code class="html">
+        &lt;body&gt;
+          &lt;p&gt;
+          &lt;/p&gt;
+        &lt;/body&gt;
+      </code></pre>
     </section>
 
     <section>
@@ -420,6 +468,14 @@ www.w3.org/TR/html4/loose.dtd"&gt;
       <img src="img/example-headings.png" alt="Example of headings" />
     </section>
 
+    <!-- Update your website with Headings and paragraphs -->
+    <section>
+      <h3>Develop It!</h3>
+      <ul>
+        <li>Add Headings &amp; a paragraph to your <code>index.html</code> page</li>
+      </ul>
+    </section>
+
     <!-- Em and Strong-->
     <section>
       <h3>Formatted text</h3>
@@ -457,7 +513,8 @@ Here is a paragraph with &lt;em&gt;emphasized&lt;/em&gt; text and &lt;strong&gt;
 <pre><code class="html">&lt;a href="http://www.girldevelopit.com" title="Girl Develop It"&gt;Girl Develop It&lt;/a&gt;<
 </code></pre>
       <p><a href ="http://www.girldevelopit.com" title="Girl Develop It">Girl Develop It</a></p>
-      <p>The &lt;a&gt; tag surrounds text or images to turn them into links</p>
+      <p>What does the &lt;a&gt; tag do?</p>
+      <p>What happens when you do not include the title attribute? What about single versus double quotes?</p>
     </section>
 
     <!-- Link Attributes -->
@@ -677,7 +734,14 @@ Above us only sky
     </section>
 
     <section>
-      <h2>Questions?</h2>
+      <h2>Close Out</h2>
+      <ul>
+        <li>What is HTML? How does it work?</li>
+        <li>What technical struggles did you overcome today?</li>
+        <li>What's next to continue your learning?</li>
+      </ul>
+      <hr>
+      <p>We love feedback! Please leave us some kind words and actionable suggestions.</p>
     </section>
 </div><!-- Close slides -->
 
