@@ -52,9 +52,21 @@
             <h2>Class 2</h2>
           </section>
 
-          <!-- Quiz 1-->
+          <!-- Check for Understanding 1 -->
           <section>
-            <h3>Quiz Part 1</h3>
+            <h3>Check for Understanding</h3>
+            <p>How is an HTML page structured?</p>
+          </section>
+
+          <!-- Check for Understanding 1 -->
+          <section>
+            <h3>Check for Understanding</h3>
+            <p>What are a few different types of HTML elements?</p>
+          </section>
+
+          <!-- Check for Understanding -->
+          <section>
+            <h3>Check for Understanding</h3>
             <p>Which tag is used to create a link to another page?</p>
             <ol>
               <li>&lt;p&gt;</li>
@@ -65,18 +77,25 @@
             <div class="fragment blue">Answer: &lt;a&gt;</div>
           </section>
 
-          <!-- Quiz 2-->
+          <!-- Check for Understanding-->
           <section>
-            <h3>Quiz Part 2</h3>
+            <h3>Check for Understanding</h3>
             <p>What are the two tags that nest directly within the &lt;html&gt; tags?</p>
             <div class="fragment blue">Answer: &lt;head&gt; and &lt;body&gt;</div>
+            <p>What's the deal with nesting?</p>
           </section>
 
-          <!-- Quiz 3-->
+          <!-- Check for Understanding -->
           <section>
-            <h3>Quiz Part 3</h3>
+            <h3>Check for Understanding</h3>
             <p>What is it called when you have a 'tag' + 'content' + 'closing tag'?</p>
             <div class="fragment blue">Answer: An HTML <strong>Element</strong></div>
+          </section>
+
+          <!-- Check for Understanding -->
+          <section>
+            <h3>Check for Understanding</h3>
+            <p>What is a relative versus absolute path?</p>
           </section>
 
           <!-- Review: Role of HTML v. CSS-->
@@ -169,9 +188,18 @@
             <p>Can only be used in one html file</p>
           </section>
 
+          <!-- Apply it! -->
+          <section>
+            <h4>Let's Try It!</h4>
+            <p>Add embedded CSS to your HTML page.</p>
+            <p>Why not change the color of headers? Can you target just the <code>h1</code> and <code>h2</code> headers? </p>
+            <p>How can you position the text of a paragraph? What about the font size of the paragraph text?</p>
+          </section>
           <!-- External-->
           <section>
             <h3>Connecting CSS to HTML: Linked</h3>
+            <br>
+            <p>What is this?</p>
 <pre><code class = "html">&lt;head&gt;
   &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
 &lt;/head&gt;
@@ -180,7 +208,6 @@
               <li>Shared resource for several pages.</li>
               <li>Reduced ﬁle size &amp; bandwidth</li>
               <li>Easy to maintain in larger projects.</li>
-              <li>Preferred by nerds everywhere!</li>
             </ul>
           </section>
 
@@ -188,14 +215,21 @@
           <section>
             <h3>Let's develop it</h3>
             <ul>
-              <li>In the same foolder you used last week, create a new file called style.css</li>
-              <li>Add a link to the file in the head of your HTML file</li>
+              <li>In the same folder you used last week, create a new file called main.css</li>
+              <li>Add a link to the file in the head of your HTML file -  <em>Is this a relative or absolute path?</em></li>
               <li>Add the CSS rule below to the CSS file:</li>
             </ul>
-<pre><code class = "css">body {
-  background-color: yellow;
+<pre><code class = "css">
+body {
+  background-color: #F5D76E;
+}
+
+* {
+  color: red;
 }
 </code></pre>
+<br>
+<p>What happened?</p>
           </section>
 
           <!-- CSS Syntax -->
@@ -226,43 +260,53 @@
             <p>Selects all image elements.</p>
           </section>
 
+          <!-- Find more selectors -->
+          <section>
+            <h3>Explore selectors</h3>
+            <p>Find at least 5 different ways to select elements on your page and change the styling - play around with your design dreams!</p>
+            <br>
+            <h4>Some Resources</h4>
+            <ul>
+              <li><a href="https://css-tricks.com/how-css-selectors-work/" target="_blank">CSS Tricks</a></li>
+              <li><a href="http://learn.shayhowe.com/advanced-html-css/complex-selectors/#common-selectors">Advanced - Common Selectors</a></li>
+              <li><a href="http://www.w3schools.com/cssref/css_selectors.asp">W3 Schools - CSS Selectors</a></li>
+            </ul>
+          </section>
+
           <!-- Color -->
           <section>
             <h3>CSS Color Values</h3>
             <p>Your browser can accept colors in many different ways:</p>
-            <ul>
-              <li><strong>Color name</strong> (ex. red)</li>
-              <li><strong>Hexadecimal value</strong> (ex. #FF0000)</li>
-              <li><strong>RGB value</strong> (ex. rgb(255, 0, 0))</li>
-              <li><strong>HSL value</strong> (ex. hsl(0, 100%, 100%))</li>
-            </ul>
-            <p>
-              The 17 standard colors are:
-              <span style="color:aqua; background:black;">aqua</span>,
-              <span style="color:black,">black</span>,
-              <span style="color:blue;">blue</span>,
-              <span style="color:fuchsia;">fuchsia</span>,
-              <span style="color:gray;">gray</span>,
-              <span style="color:grey;">grey</span>,
-              <span style="color:green;">green</span>,
-              <span style="color:lime;">lime</span>,
-              <span style="color:maroon;">maroon</span>,
-              <span style="color:navy;">navy</span>,
-              <span style="color:olive;">olive</span>,
-              <span style="color:purple;">purple</span>,
-              <span style="color:red;">red</span>,
-              <span style="color:silver; background:black;">silver</span>,
-              <span style="color:teal;">teal</span>,
-              <span style="color:white; background:black;">white</span>,
-              and <span style="color:yellow; background:black;">yellow</span>.
-            </p>
+            <table>
+            <tr>
+              <td style="font-size:30px; padding: 10px;"><strong>Color name</strong></td>
+              <td style="font-size:24px; padding: 10px;"><strong>Hexadecimal value</strong></td>
+              <td style="font-size:30px; padding: 10px;"><strong>RGB value</strong></td>
+              <td style="font-size:30px; padding: 10px;"><strong>HSL value</strong></td>
+            </tr>
+            <tr>
+              <td style="font-size:24px; padding: 15px;"><code class="css">red</code></td>
+              <td style="font-size:24px; padding: 15px;"><code class="css">#FF0000</code></td>
+              <td style="font-size:22px; padding: 15px;"><code class="css">rgb(255, 0, 0)</code></td>
+              <td style="font-size:22px; padding: 15px;"><code class="css">hsl(0, 100%, 50%)</code></td>
+            </tr>
+            </table>
           </section>
+
           <section>
             <h3>Property: Color</h3>
             <p>The color property changes the color of the text.</p>
+            <br>
+            <p>Three ways to do the same thing:</p>
 <pre><code class = "css">p {
   color: red;
-  color: #ff0000;
+}
+/*or */
+p {
+  color:  #ff0000;
+}
+/*or */
+p {
   color: rgb(255, 0, 0);
 }
 </code></pre>
@@ -272,10 +316,8 @@
           <section>
             <h3>Property: Background-color</h3>
             <p>The background-color property changes the color of the background.</p>
-<pre><code class = "css">p {
-  background-color: black;
-  background-color: #000000;
-  background-color: rgb(0,0,0);
+<pre><code class = "css"> body {
+  background-color: /* find a color to change your HTML page background */
 }
 </code></pre>
           </section>
@@ -284,16 +326,16 @@
           <section>
             <h3>Let's develop it</h3>
             <ul>
-              <li>Add some rules to your css file</li>
-              <li>Change the font color and background color of different types of elements</li>
-              <li>Try selecting links, paragraphs, and lists</li>
+              <li>Style your website!</li>
+              <li>Target the headers, font in a paragraph, positioning of text, positioning of images, and more!</li>
+              <li>Stretch it: style the navigation bar links based on state (clicked, hovering, unvisited)</li>
             </ul>
           </section>
 
           <!-- Multiple values -->
           <section>
           <h3>Property Values</h3>
-          <p>Each property can have one or more comma separated values.</p>
+          <p>Each property can have one or more separated values.</p>
 <pre><code class = "css">p{
   color: white;
   background-color: red;
@@ -314,19 +356,23 @@
 </code></pre>
             <p>Specific font name</p>
             <p>Generic name</p>
-            <p>Comma-separated list</p>
+            <p>semi-colon ; separated list</p>
           </section>
 
           <!-- Font size -->
           <section>
             <h3>Property: Font-size</h3>
-            <p>The font-size property speciﬁes the size of the font.</p>
-<pre><code class = "css">p {
-  font-size: 12px;
-  font-size: 1.5em;
-  font-size: 100%;
-}
-</code></pre>
+            <p>The font-size property specifies the size of the font.</p>
+
+          <pre><code class = "css">
+          p {
+            font-size: 12px;
+            font-size: 1.5em;
+            font-size: 100%;
+          }
+          </code></pre>
+          <br>
+          <h5>What is the difference between:</h5>
             <p>Pixels</p>
             <p>"em"</p>
             <p>Percentage</p>
@@ -385,7 +431,8 @@
   color: purple;
 }
 </code></pre>
-            <p>Means "find a strong tag inside a link inside a list item in an unordered list"</p>
+            <p> So what does that CSS mean? Fill in the blank:</p>
+            <p>"find a ____inside a ___ inside a __ in an ___ list"</p>
 <pre><code class = "html">&lt;ul&gt;
   &lt;li&gt;&lt;a href="programs.html"&gt;Our &lt;strong&gt;program&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -409,7 +456,7 @@
           </section>
           <section>
             <h3>IDs vs. Classes</h3>
-            <p><strong>ID</strong> -- Should only apply to one element on a webpage, i.e., a webpage only has one footer.<br />
+            <p><strong>ID</strong> -- Applies to <strong>one</strong> element on a webpage, i.e., a webpage only has one footer.<br />
             The "#" is how you tell CSS "this is an id."</p>
             <p><strong>Class</strong> -- Lots of elements can have the same class, i.e., There can be many warnings on one webpage.<br />
             The "." is how you tell CSS "this is a class name."</p>
