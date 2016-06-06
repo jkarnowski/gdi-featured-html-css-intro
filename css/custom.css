@@ -31,6 +31,14 @@ div.left-align{
     font-size: 1.8em;
 }
 
+section .outer-list-text {
+    font-size: 22px;
+}
+
+section .inner-list-text {
+    font-size: 18px;
+}
+
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
