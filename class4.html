@@ -56,14 +56,14 @@
           <section>
             <h3>Static Positioning</h3>
             <ul>
-              <li>HTML elements are positioned static by default.</li>
+              <li>HTML elements are positioned <code>static</code> by default.</li>
               <li>Static elements are positioned in the normal ﬂow of the page</li>
               <li>Static elements ignore top, bottom, right or left property specifications.</li>
             </ul>
           </section>
 
           <section>
-            <h3>Static Positioning</h3>
+            <h3>Static Positioning: Inline</h3>
             <p>In normal flow, inline boxes flow from left to right, wrapping to next line when needed.</p>
 <pre><code class="html">&lt;img src="img/cookie1.png"/&gt;
 &lt;img src="img/cookie2.png"/&gt;
@@ -83,7 +83,7 @@
           </section>
 
           <section>
-            <h3>Static Positioning</h3>
+            <h3>Static Positioning: Block</h3>
             <p>In normal flow, block boxes flow from top to bottom, making a new line after every box.</p>
 <pre><code class ="html">&lt;p&gt;Greetings&lt;/p&gt;
 &lt;p&gt;Hello&lt;/p&gt;
@@ -172,6 +172,7 @@
               <img src="img/example-absolute.png" class="noborder" alt="Photo with caption overlayed on top"/>
             </div>
             <div class="clear"></div>
+            <p>Bonus: Look up <code>fixed</code> positioning. What's the difference between <code>fixed</code> and <code>absolute</code>?</p>
           </section>
 
           <section>
@@ -198,16 +199,17 @@
           <section>
             <h3>Let's Develop it!</h3>
             <p>Let's add some positioning.</p>
-            <p>Let's create a div that contains an image and a caption, and position the caption absolutely overtop the image.</p>
+            <p>Let's create a div that contains an image and a caption, and position the caption absolutely in front of the image the image.</p>
+            <p>Bonus: Use semantic HTML5 elements for your image and caption.</p>
           </section>
 
           <!-- Float-->
           <section>
             <h3>Float</h3>
             <ul>
-              <li>"Floating" an element takes it in the normal flow, as far to the left or right of it's containing element as possible.</li>
+              <li>"Floating" an element takes it in the normal flow, as far to the left or right of its containing element as possible.</li>
               <li>Any other elements, such as paragraphs or lists, will wrap around the floated element.</li>
-              <li>Always specify a width when floating an element, otherwise the element is likely to take up the whole page and not appear floated.</li>
+              <li>Always specify a width when floating an element--otherwise the element is likely to take up the whole width of the container and not appear floated.</li>
               <li>You can specify a) whether an element is floated or not, and b) which side it ﬂoats on.</li>
             </ul>
           </section>
